@@ -1,0 +1,40 @@
+---
+//src/components/Header.astro
+---
+
+<header>
+    <div class="container">
+       <img src="/LogoMini.jpg" alt="Barbería" class="logo"/>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li class="lista"><a href="#inicio">Inicio</a></li>
+        <li><a href="#inicio">Nosotros</a></li>
+        <li><a href="#inicio">Trabajos</a></li>
+        <li><a href="#inicio">Servicios</a></li>
+        <li><a href="#inicio">Contactos</a></li>
+      </ul>
+    </nav>
+</header>
+
+<style>
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+    }
+    .logo{
+        width: 50px;
+    }
+    .menu{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+    a{
+        font-size: 15px;
+    }
+</style>

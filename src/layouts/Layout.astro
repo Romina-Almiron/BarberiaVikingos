@@ -4,19 +4,51 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Barbería Los Vikingos</title>
+
+        <!-- fuente Safira March -->
+
+		<style>
+           @font-face{
+			font-family: 'Safira March';
+			src: url('/Fonts/Safira March Personal Use Only.ttf');
+		   }
+		</style>
+
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 
+<!-- Global Styles  -->
 <style>
 	html,
 	body {
 		margin: 0;
-		width: 100%;
-		height: 100%;
+		padding: 0;
 	}
+	body{
+		background-color: #FF4D00;
+		font-family: 'Safira March', serif;
+		color: #000000;
+		overflow: hidden;
+    }
+	*{
+		box-sizing: border-box;
+	}
+	a {
+        text-decoration: none;
+        color: inherit;
+    }
+	section {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+	img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
 </style>
