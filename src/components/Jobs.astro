@@ -1,0 +1,102 @@
+---
+//src/components/Jobs.astro
+---
+<section id="trabajos" class="container">
+
+    <div class="jobs">
+      <div class="background-rect"></div>
+
+        <div class="images-container">
+
+            <div class="images-row">
+                <div class="image-with-border">
+                  <img src="/BarberiaVikingos/img/Work1.jpg" alt="Barnería Los Vikingos">
+                  <div class="border"></div>
+                </div>
+                <div class="image-with-border">
+                  <img src="/BarberiaVikingos/img/Work2.jpg" alt="Barnería Los Vikingos">
+                  <div class="border"></div>
+                </div>
+            </div>
+            <div class="images-row">
+                <div class="image-with-border">
+                  <img src="/BarberiaVikingos/img/Work3.jpg" alt="Barnería Los Vikingos">
+                  <div class="border"></div>
+                </div>
+                <div class="image-with-border">
+                  <img src="/BarberiaVikingos/img/Work4.jpg" alt="Barnería Los Vikingos">
+                  <div class="border"></div>
+                </div>
+            </div>
+        </div>
+     
+    </div>
+    
+</section>
+
+<style>
+    .jobs{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 710px;
+        width: 100%;
+        top: 40px;
+    }
+    .jobs .background-rect{
+        position: absolute;
+        width:90%;
+        height: 450px;
+        left:0;
+        right: 0;
+        margin: auto;
+        top:120px;
+        background-color: #f4ad6f;
+        border-radius: 40px;
+        z-index: 1;
+    }
+    .jobs .images-container{
+        position: relative;
+        top:20px;
+        z-index: 2;
+        width: 75%;
+        margin: auto;
+    }
+    .images-row {
+       display: flex;
+       justify-content:center;
+       align-items: center;
+       gap: 150px;
+       margin-bottom: 120px;
+    }
+    .images-row:first-child {
+        justify-content: flex-start;
+    }
+    .images-row:last-child {
+       justify-content: flex-end;
+    }
+    img {
+       width: 250px;
+       height: 250px;
+       object-fit: cover;
+       z-index: 1;
+    }
+    .image-with-border {
+        position: relative;
+        display: inline-block;
+    } 
+    .border {
+    position: absolute;
+    bottom: -20px; 
+    left: -20px;
+    right: 0;
+    width: 300px;
+    height: 300px; 
+    background: url('/BarberiaVikingos/img/Marco.png') no-repeat center center; 
+    background-size: cover;
+    z-index: 1;
+    opacity: .6;
+   }
+
+</style>

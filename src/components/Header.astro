@@ -1,0 +1,45 @@
+---
+//src/components/Header.astro
+---
+
+<header>
+    <div class="container">
+       <img src="/BarberiaVikingos/LogoBV.png" alt="Barbería" class="logo">
+    
+        <nav>
+            <ul class="menu">
+             <li class="lista"><a href="#inicio" class=" animate__animated animate__zoomIn  ">Inicio</a></li>
+             <li><a href="#nosotros" class="animate__animated animate__zoomIn animate__delay-1s ">Nosotros</a></li>
+             <li><a href="#trabajos" class="animate__animated animate__zoomIn animate__delay-2s ">Trabajos</a></li>
+             <li><a href="#servicios" class="animate__animated animate__zoomIn animate__delay-3s ">Servicios</a></li>
+             <li><a href="#contactos" class="animate__animated animate__zoomIn animate__delay-4s ">Contactos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+
+    .logo{
+        width: 125px;
+        margin-left: 20px;
+        margin-top: 10px;
+       
+    }
+    .menu{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        padding: 20px;
+       
+    }
+    .menu li a{
+        font-size: 30px;
+        text-decoration: none;
+        text-transform:uppercase;
+        color: #000;
+        display: block;
+        text-align: center;
+
+    }
+</style>

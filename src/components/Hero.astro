@@ -1,0 +1,54 @@
+---
+//src/components/Hero.astro
+---
+<section id="inicio" class="container">
+
+    <div class="hero">
+      <img src="/BarberiaVikingos/img/Hero1.jpg" alt="Barberia Vikingo">
+      <img src="/BarberiaVikingos/img/Hero2.jpg" alt="Barberia Vikingo">
+      <img src="/BarberiaVikingos/img/Hero3.jpg" alt="Barberia Vikingo">
+    </div>
+
+    <div class="title">
+        <h1><span>Barbería Los</span>Vikingos</h1>
+    </div>
+
+</section>
+
+
+
+<style>
+    #inicio {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .hero{
+        display: flex;
+        gap: 50px;
+        justify-content:space-between;
+        overflow: hidden;
+        margin: 0 10px;
+        align-items: center;
+        
+    }
+    .hero img {
+       width: 319px;
+       height: 419px;
+       object-fit: cover;
+    }
+    .title{
+        text-align: center;
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+    .title span{
+        display: block;
+    }
+    .title h1{
+        margin: 0;
+        font-weight: 100;
+        margin-top: 10px;
+        
+    }
+</style>
+
