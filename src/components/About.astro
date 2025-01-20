@@ -1,0 +1,85 @@
+---
+//src/components/About.astro
+---
+
+<section id="nosotros" class="container">
+
+  <div class="images">
+    <div class="left-images">
+      <img src="/img/About1.jpg" alt="Barbería Los Vikingos" class="image-one">
+      <img src="/img/About2.jpg" alt="Barbería Los Vikingos" class="image-two">
+    </div>
+  </div>
+
+  <div class="text-overlay">
+    <div class="text-content">
+      <h2>CON MÁS DE 100 AÑOS EN EL RUBRO.</h2>
+    </div>
+  </div>
+  <img src="/img/About3.png" alt="Barbería Los Vikingos" class="background-image">
+
+</section>
+  
+<style>
+  #nosotros{
+    position: relative;
+    height: 700px;
+  }
+  #nosotros .images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 60px;
+  }
+  #nosotros .left-images{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 368px;
+  }
+  #nosotros .image-one{
+    position: relative;
+    width: 550px;
+    height: auto;
+    aspect-ratio: 384/260;
+    object-fit: cover;
+    z-index: 1;
+  }
+  #nosotros .image-two{
+    position: absolute;
+    top: 300px;
+    left:95px;
+    width: 550px;
+    height: auto;
+    aspect-ratio: 378/258;
+    z-index: 2;
+  }
+  #nosotros .text-overlay {
+    position: relative; 
+    width: 35%; 
+    display: grid;
+  }
+  
+  #nosotros .background-image{
+    position: absolute;
+    max-width: 80%;
+    right: -30px;
+    top:40px;
+    opacity: .5;
+  }
+  
+  #nosotros .text-content {
+  position: relative; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-family: 'Safira March',serif;
+  font-size: 3.5rem; 
+  font-weight: 100;
+  text-align: center;
+  z-index: 2; 
+}
+</style>
+

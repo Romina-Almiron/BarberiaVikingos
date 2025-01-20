@@ -1,0 +1,61 @@
+---
+//src/components/Services.astro
+---
+
+<section id="servicios" class="container">
+
+    <div class="container-services">
+
+      <img src="/img/espada.png" alt="Barberia Vikingo" class=" imagen izquierda">
+
+      <div class="texto">
+        <p class="animate__animated animate__fadeInLeft animate__delay-6s animate__duration-2s">Corte de cabello.</p>
+        <p class="animate__animated animate__fadeInLeft animate__delay-1s animate__duration-1s">Afeitado tradicional.</p>
+        <p class="animate__animated animate__fadeInLeft animate__delay-2s animate__duration-1s">Arreglo de barba.</p>
+        <p class="animate__animated animate__fadeInLeft animate__delay-3s animate__duration-1s">Corte de bigote.</p>
+        <p class="animate__animated animate__fadeInLeft animate__delay-4s animate__duration-1s">Limpieza facial.</p>
+        <p class="animate__animated animate__fadeInLeft animate__delay-5s animate__duration-1s">Tratamientos capilares.</p>
+      </div>
+
+      <img src="/BarberiaVikingos/img/espada.png" alt="Barberia Vikingo" class=" imagen derecha">
+
+    </div>
+
+</section>
+
+<style>
+    #servicios .container-services{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        position: relative;
+        width: 100%;
+        height: 700px; 
+        margin: 0 auto; 
+        top:20px
+         
+    }
+    .imagen{
+        width: 85px;
+        height: auto;
+        opacity: .7;
+    }
+    .izquierda{
+       margin-left: 40px;
+    }
+    .derecha{
+        margin-right: 40px;
+        transform: rotate(180deg);
+    }
+    .texto{
+        font-size: 78px;
+        text-align: center;
+    }
+    .texto p{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    
+
+</style>
