@@ -4,7 +4,7 @@
 import Icon from "./Icon.astro" 
 ---
 <section id="contactos" class="container">
-
+ 
     <div class="footer-container">
 
         <!--Columna Izquierda -->
@@ -46,10 +46,11 @@ import Icon from "./Icon.astro"
             <a href="#contactos" class="animate__animated animate__fadeInRight animate__delay-2s animate__duration-1s" >CONTACTOS</a>
         </div>
     </div>
-   
+ 
 </section>
 
 <style>
+    
     .footer-container{
         display: flex;
         justify-content: space-between;
@@ -58,25 +59,27 @@ import Icon from "./Icon.astro"
         width: 100%;
         height: 450px;
         margin-top: 20px;
+        position: relative;
         
     }
     .footer-column{
         text-align: center;
         padding: 10px;
-        
     }
     .icon-text{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         gap:10px;
         margin: 0;
+        
         padding: 0;
     }  
     .icon-text p {
         font-size: 25px; 
         margin: 0; 
         padding: 10px; 
+        white-space: nowrap;
     }
     .icon-text svg{
         margin-right: 30px
@@ -91,7 +94,7 @@ import Icon from "./Icon.astro"
         justify-content: center;
         align-items: center;
         gap:10px;
-        
+        margin-right: 20px;
         width: 300px;
     }
     .left{
@@ -99,8 +102,9 @@ import Icon from "./Icon.astro"
         display: flex; 
         flex-direction: column; 
         align-items:flex-start;
-       justify-content:flex-start; 
-       gap: 10px; 
+        justify-content:flex-start; 
+        gap: 10px; 
+        margin-left: 20px;
     }
     .right a{
         text-decoration: none;
@@ -126,6 +130,7 @@ import Icon from "./Icon.astro"
         text-align: center;
         position: relative;
         z-index: 2;
+        
     }
     .divider{
        background-color: #000;

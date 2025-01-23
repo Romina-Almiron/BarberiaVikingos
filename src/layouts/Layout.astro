@@ -29,12 +29,35 @@
 <style is:global>
 	
 	body{
-	    margin: 0 30px;
+		position: relative;
+	    margin: 0;
+		padding: 0;
 		background-color: #FF4D00;
 		font-family: 'Safira March', serif;
 		color: #000000;
 		overflow-x: hidden;
     }
+	body::before,
+	body::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 150px;
+		height: 416px;
+		margin-left: 70px;
+		margin-right: 70px;
+		opacity: 0.5;
+		background-image: url('/BarberiaVikingos/img/footer2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+	}
+	body::before {
+		left: 0; /* Lado izquierdo */
+	}
+	body::after {
+		right: 0; /* Lado derecho */
+	}
 	*{
 		box-sizing: border-box;
 	}
@@ -47,10 +70,12 @@
         padding: 10px 20px;
         background-color: #fff;
 		padding-bottom: 10px;
+		position: relative;
+		z-index: 1;
     }
 	section {
       background-color: #ffffff;
-      
+	  position: relative;
     }
 	img {
       max-width: 100%;
